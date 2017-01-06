@@ -128,7 +128,7 @@ class Contacts extends Component{
                                                  phone={contact.phone}
                                                  contactKey={i}
                                                  key={i}
-                                                 isSelected={this._isSelected.bind(this)}
+                                                 isSelected={this._isSelected.bind(this)(i)}
                                                  onSelect={this._onSelect.bind(this)}
                             />);
                         })
