@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+
+}
+#root{
+ text-align: center;
+}
+
+h1{
+    display: inline-block;
+}
+
+body {
+    background-color: #ECEFF1;
+}
+
+h1{
+    color:purple;
+}
+ul{
+    display: inline-block;
+    width: 300px;
+}
+
+#container {
+    width: 300px;
+    display: inline-block;
+    padding: 0 20px;
+}
+span{
+    color: black;
+}
+
+.btn{
+    margin-bottom: 10px;
+    width: 100px;
+    color: #ffff00;
+    padding: 0;
+
+}
