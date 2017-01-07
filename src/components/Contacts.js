@@ -70,7 +70,6 @@ class Contacts extends Component{
     }
 
     /*지호님께 여쭤보기 Promise????*/
-
     _removeContact(){
         //선택되여진 컴포넌트인지 확인 후 삭제를 진행해야하므로
         //아래 if문을 먼저 실행한다.
