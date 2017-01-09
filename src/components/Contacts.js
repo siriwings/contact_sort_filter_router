@@ -4,6 +4,7 @@ import ContactInfo from './ContactInfo';
 import ContactCreator from './ContactCreator';
 import ContactRemover from './ContactRemover';
 import ContactEditor from './ContactEditor';
+import ContactSearch from './ContactSearch';
 
 class Contacts extends Component{
     constructor(props){
@@ -116,32 +117,19 @@ class Contacts extends Component{
     }
 
     render(){
+
         return (
             <div>
                 <h1>Contacts</h1>
-                <div>
-                <ul>
-                    {
-                        this.state.contactData.map((contact,i)=>{
-                            return (<ContactInfo name={contact.name}
-                                                 phone={contact.phone}
-                                                 contactKey={i}
-                                                 key={i}
-                                                 isSelected={this._isSelected.bind(this)(i)}
-                                                 onSelect={this._onSelect.bind(this)}
-                            />);
-                        })
-                    }
-                </ul>
-                </div>
-
+                <ContactSearch data={this.state.contactData}
+                               isSelected={this._isSelected.bind(this)}
+                               onSelect={this._onSelect.bind(this)}/>
                 <div id="container">
                     <ContactCreator onInsert={this._insertContact.bind(this)}/>
                     <ContactRemover onRemove={this._removeContact.bind(this)}/>
                     <ContactEditor onEdit={this._editContact.bind(this)}
                                    contact={this.state.selected}/>
                 </div>
-
             </div>
         );
     }

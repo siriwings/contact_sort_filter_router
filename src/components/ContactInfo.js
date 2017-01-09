@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 class ContactInfo extends Component{
 
     handleClick(){
-        this.props.onSelect(this.props.contactKey);
+        this.props.onSelect2(this.props.contactKey);
     }
 
 
@@ -28,7 +28,7 @@ class ContactInfo extends Component{
         }
 
         return (
-            <li style={getStyle(this.props.isSelected)}
+            <li style={getStyle(this.props.isSelected2)}
                 onClick={this.handleClick.bind(this)}
                 className="purple-text text-accent-3"><span>name : </span>{this.props.name} &nbsp; &nbsp; <span>phone : </span>{this.props.phone}</li>
         );

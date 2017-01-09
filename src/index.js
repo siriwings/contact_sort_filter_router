@@ -6,13 +6,15 @@ import Home from './components/Home';
 import Articles from './components/Articles';
 import About from './components/About';
 
-ReactDOM.render(<Router history = {browserHistory}>
-    <Route path = "/" component = {App}>
-        <IndexRoute component = {Home} />
-        <Route path = "home" component = {Home} />
-        <Route path = "about" component = {About} />
-        <Route path = "articles" component = {Articles} />
-    </Route>
-</Router>, document.getElementById('root'));
+ReactDOM.render(
+    <Router history = {browserHistory}>
+        <Route path = "/" component = {App}>
+            <IndexRoute component = {Home} />
+            <Route path = "home" component = {Home} />
+            <Route path = "about" component = {About} />
+            <Route path = "articles" component = {Articles} />
+        </Route>
+    </Router>
+, document.getElementById('root'));
 
 

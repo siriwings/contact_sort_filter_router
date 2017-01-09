@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router';
+
 import Contacts from './Contacts';
+
 
 class App extends Component{
     componentWillMount() {
