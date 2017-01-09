@@ -9,7 +9,7 @@ class Articles extends Component{
     render(){
         return (
             <div>
-                <h2>Hey, I am Articles!</h2>
+                <h3>Hey, I am Articles!</h3>
 
             </div>
         );

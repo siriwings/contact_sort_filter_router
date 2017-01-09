@@ -71,9 +71,11 @@ class ContactSearch extends Component{
 
         return (
             <div>
+                <div class="search">
                 <input name="keyword" placeholder="Search"
                        onChange={this.handleChange.bind(this)}
                        value={this.state.keyword}/>
+                </div>
                 <div>
                     <ul>
                         {

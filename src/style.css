@@ -12,20 +12,25 @@
  text-align: center;
 }
 
-h1{
-    display: inline-block;
+h3{
+    color:black;
+    margin: 0;
+}
+#title{
+    color:purple ;
 }
 
 body {
     background-color: #ECEFF1;
 }
 
-h1{
-    color:purple;
-}
 ul{
     display: inline-block;
     width: 300px;
+}
+
+li{
+    text-align: left;
 }
 
 #container {
@@ -48,8 +53,4 @@ span{
 .appli{
     float: left;
     margin-left: 50px;
-}
-
-h2{
-    margin: 0;
 }

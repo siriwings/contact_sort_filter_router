@@ -120,11 +120,11 @@ class Contacts extends Component{
 
         return (
             <div>
-                <h1>Contacts</h1>
+                <h3 id="title">Contacts</h3>
+                <div id="container">
                 <ContactSearch data={this.state.contactData}
                                isSelected={this._isSelected.bind(this)}
                                onSelect={this._onSelect.bind(this)}/>
-                <div id="container">
                     <ContactCreator onInsert={this._insertContact.bind(this)}/>
                     <ContactRemover onRemove={this._removeContact.bind(this)}/>
                     <ContactEditor onEdit={this._editContact.bind(this)}
